@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 try 
 {
 	$bdd = new PDO('mysql:host=172.14.140.8:3306;dbname=zalandafpa;charset=utf8','jonathan','123', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
@@ -10,11 +12,11 @@ catch (Exception $e)	//permet de capturer l'exception en cas d'erreur, et d'évi
 } 
 
 
-// ROUTEUR 
-
-$routeur = "delete";
-$id_client = 8;
+$prenom = $_SESSION['prenom'];
 $id_client = $SESSION['id_client'];
+
+// ROUTEUR 
+$routeur = "delete";
 
 switch ($routeur) {
 	case "update":
@@ -36,7 +38,7 @@ switch ($routeur) {
 				WHERE id_client = " . $id_client . "";
 			$bdd->exec($requete);
 		}
-		echo('Le compte du client n°' . $id_client . ' est mis à jour');		
+		echo("Le compte de " . $prenom . " a bien été mis à jour.");
 		break;
 
 	case "delete":
@@ -45,7 +47,7 @@ switch ($routeur) {
 			DELETE FROM clients 
 			WHERE id_client = " . $id_client . "";
 		$bdd->exec($requete);
-		echo('Le compte du client n°' . $id_client . ' est supprimé');
+		echo("Adieu " . $prenom . " , vous n'allez pas nous manquer sale batard!");
 		break;
 }
 
