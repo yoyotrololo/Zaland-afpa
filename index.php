@@ -22,7 +22,7 @@
       include('./menu.php');
       
       //Corps de la page, récupération en $_GET
-      include('./accueil.php');
+      //include('./accueil.php');
  
       
       
