@@ -35,6 +35,7 @@ else
         $_SESSION['id_client'] = $resultat['id_client'];
         $_SESSION['mail'] = $mail;
         echo 'Vous êtes connecté !';
+	$_SESSION['connexion'] = true;
     }
     else {
         echo 'Mauvais email ou mot de passe !';
