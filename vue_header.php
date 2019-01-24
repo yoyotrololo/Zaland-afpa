@@ -7,7 +7,11 @@
                 <h1>Zaland'Afpa</h1>
             </div>
             <?php
-            if($_SESSION['connexion']){
+            $etatSession = session_status();
+            //$etatSession = 2;
+            if ($etatSession == 2) {
+            
+            //if($_SESSION['connexion']){
                 ?>
             <div class="col-sm-2">
                 <nav class="navbar navbar-expand-lg ">
