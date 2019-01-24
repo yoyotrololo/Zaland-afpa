@@ -66,7 +66,6 @@
             <li>
               <a href="#!">Chèques cadeaux d'entreprise</a>
             </li>
-            
           </ul>
 
         </div>
