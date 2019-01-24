@@ -6,14 +6,44 @@
 
       <!-- Grid row -->
       <div class="row">
+<hr class="clearfix w-100 d-md-none">
 
         <!-- Grid column -->
-        <div class="col-md-4 mx-auto">
+        <div class="col-md-6 mx-auto">
 
-          <!-- Content -->
-          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Footer Content</h5>
-          <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit.</p>
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Aide</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Questions fréquentes</a>
+            </li>
+            <li>
+              <a href="#!">Essayer d'abord, payez après!</a>
+            </li>
+            <li>
+              <a href="#!">Livraison 24h gratuite en point retrait</a>
+            </li>
+                <li>
+              <a href="#!">Retour depuis votre boîte aux lettres</a>
+            </li>
+                  <li>
+              <a href="#!">Suivre mon colis</a>
+            </li>
+                     <li>
+              <a href="#!">Moyens de paiement</a>
+            </li>
+                     <li>
+              <a href="#!">Guides des tailles</a>
+            </li>
+                     <li>
+              <a href="#!">Retour & remboursement</a>
+            </li>
+                     <li>
+              <a href="#!">10% de réduction avec la newletter</a>
+            </li>
+              
+          </ul>
 
         </div>
         <!-- Grid column -->
@@ -21,23 +51,20 @@
         <hr class="clearfix w-100 d-md-none">
 
         <!-- Grid column -->
-        <div class="col-md-2 mx-auto">
+        <div class="col-md-3 mx-auto">
 
           <!-- Links -->
-          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Chèques cadeaux</h5>
 
           <ul class="list-unstyled">
             <li>
-              <a href="#!">Link 1</a>
+              <a href="#!">Offrir une carte cadeau</a>
             </li>
             <li>
-              <a href="#!">Link 2</a>
+              <a href="#!">Utiliser une carte cadeau</a>
             </li>
             <li>
-              <a href="#!">Link 3</a>
-            </li>
-            <li>
-              <a href="#!">Link 4</a>
+              <a href="#!">Chèques cadeaux d'entreprise</a>
             </li>
           </ul>
 
@@ -47,23 +74,35 @@
         <hr class="clearfix w-100 d-md-none">
 
         <!-- Grid column -->
-        <div class="col-md-2 mx-auto">
+        <div class="col-md-3 mx-auto">
 
           <!-- Links -->
-          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Zaland'AFPA</h5>
 
           <ul class="list-unstyled">
             <li>
-              <a href="#!">Link 1</a>
+              <a href="#!">Corporate Website</a>
             </li>
             <li>
-              <a href="#!">Link 2</a>
+              <a href="#!">Emplois</a>
             </li>
             <li>
-              <a href="#!">Link 3</a>
+              <a href="#!">Presse</a>
             </li>
             <li>
-              <a href="#!">Link 4</a>
+              <a href="#!">Programme d'affiliation</a>
+            </li>
+                <li>
+              <a href="#!">Zaland'AFPA Marketing Services</a>
+            </li>
+                <li>
+              <a href="#!">Questions marketing</a>
+            </li>
+                <li>
+              <a href="#!">Programme partenaire</a>
+            </li>
+                 <li>
+              <a href="#!">Lexique de la mode</a>
             </li>
           </ul>
 
@@ -73,14 +112,14 @@
         <hr class="clearfix w-100 d-md-none">
 
         <!-- Grid column -->
-        <div class="col-md-2 mx-auto">
+        <div class="col-md-3 mx-auto">
 
           <!-- Links -->
-          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Mode de livraison</h5>
 
           <ul class="list-unstyled">
             <li>
-              <a href="#!">Link 1</a>
+              <a src="img/logo_DHL.png"></a>
             </li>
             <li>
               <a href="#!">Link 2</a>

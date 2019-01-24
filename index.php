@@ -1,6 +1,5 @@
 <!DOCTYPE html">
 <html lang="fr">
-
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="./bootstrap-4.2.1-dist/css/bootstrap.min.css" />
@@ -14,7 +13,6 @@
 
     <title>Zaland'AFPA | Site de vêtements en ligne</title>
 </head>
-
 <body>
 
     <?php
@@ -28,11 +26,11 @@
       
       
       
-      
+
       include('./footer.php');
-      
       ?>
+      
+      
+  </body>
+  </html>
 
-</body>
-
-</html>

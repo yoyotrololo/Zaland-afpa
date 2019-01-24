@@ -1,3 +1,48 @@
+<link rel="stylesheet" type="text/css" href="menu.css">
+<header>
+    <div class="container-fluid" id="connexion">
+        <div class="row">
+            <div class="offset-sm-2 "></div>
+            <div class="col-sm-8">
+                <h1>Zaland'Afpa</h1>
+            </div>
+            <div class="col-sm-2">
+                <button id="bouton" type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Connexion/S'inscrire</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <form method="post" enctype="text/plain" name="formulaire" onSubmit="return valider();">
+                    <div class="form-row">
+
+                        <div class="form-group col-sm-6 offset-sm-3">
+                            <label for="recipient-name" class="col-form-label">E-mail:</label>
+                            <input type="mail" class="form-control" id="email" name="mail">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-sm-6 offset-sm-3">
+                            <label for="recipient-name" class="col-form-label">Mot de passe:</label>
+                            <input type="password" class="form-control" id="pass" name="pass">
+                        </div>
+                    </div>
+                    <div class="form-group offset-sm-4">
+                        <input type="button" class="btn btn-primary" value="Connexion">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+
+
+            </div>
+        </div>
+    </div>
+</div>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="?page=accueil"><i class="fa fa-home" style="font-size:35px;"></i></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
