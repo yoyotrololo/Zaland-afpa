@@ -1,11 +1,15 @@
 <?php
 
 switch($page){
-    case "homme": include('./homme.php');
+    case "homme": include('./vue_homme.php');
         break;
-    case "femme": include('./femme.php');
+    case "femme": include('./vue_femme.php');
         break;
-    default: include('accueil.php');
+    case "accueil": include('./vue_accueil.php');
+        break;
+    case "filter": include('./vue_filter.php');
+        break;
+    default: include('./vue_accueil.php');
         break;
 }
 
