@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>test</title>
+</head>
+
+<body>
+
+<!--     FORMULAIRE TEST POUR LA MISE A JOUR DU COMPTE -->
+
+<!-- ATTENTION : l'attribut 'name' de chaque input doit correspondre exactement aux noms de champs de la table 'clients' -->
+    <div id="div_contenu">
+        <form action='' method='' id="form_maj">
+            <input type='text' name='prenom' placeholder="prenom" id="prenom">  
+            <input type='text' name='nom' placeholder="nom" id="nom">
+            <input type='text' name='genre' placeholder="genre" id="genre">
+            <input type='text' name='ville' placeholder="ville" id="ville">  
+            <input type='text' name='pays' placeholder="pays" id="pays">            
+            <input type='text' name='CP' placeholder="CP" id="CP">
+            <button type='button' id='btn_maj'>Mettre à jour</button>
+        </form>
+        <p id="p_reponse">Réponse du PHP</p>
+            <button type='button' id='btn_sup'>Supprimer compte</button>
+    </div>
+
+    <script>
+    
+    //REQUETE POUR METTRE A JOUR LES INFOS
+    $(document).ready(function(){
+        $("#btn_maj").click(function(){
+            var json = {"champModif": [],"nouvellesValeurs": []};;  //préparation du json
+            var allInputs = $("#form_maj > input");     // récupération de tous les inputs
+            var num = 0; 
+            for (i=0; i<allInputs.length; i++) {
+                if ($(allInputs[i]).val() != '') {      // pour éviter de rentrer dans le json des champs vides
+                    json["champModif"][num] = $(allInputs[i]).attr('name'); //entrer 
+                    json["nouvellesValeurs"][num] = $(allInputs[i]).val();  
+                    num++;
+                } 
+            }
+            jsonString = JSON.stringify(json);  
+            jsonString = "[" + jsonString + "]"; // pour que le json soit lisible parl e php
+
+            var requete = $.post('gestion_compte.php', {
+                    json: jsonString,   //envoi du json
+                    routeur: 'update'   //envoi du routeur
+                })
+                .always(function() {
+                    $('#p_reponse').text(requete.responseText);
+                });            
+        });
+    });
+
+
+    // REQUETE POUR SUPPRIMER COMPTE
+    $(document).ready(function(){
+        $('#btn_sup').click(function(){
+            var requete = $.post('gestion_compte.php', {
+                    routeur: 'delete'   //envoi du routeur
+                })
+                .always(function() {
+                    $('#p_reponse').text(requete.responseText);
+                });             
+        });
+    });
+
+    </script>
+</body>
