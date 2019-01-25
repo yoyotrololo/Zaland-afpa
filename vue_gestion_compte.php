@@ -1,18 +1,9 @@
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <style> h1{ text-align: center; color: royalblue;}    
-       
-    </style>
-</head>
-<body>
+  
 
-    <br><br>
+</head>
     <div class="col-md-6 offset-md-3 shadow p-3 mb-5 bg-white ">
-        <h1>Gestion de compte</h1>
+        <div id="titre_gestion"><h1>Gestion de compte</h1></div>
         <form method="post" action="inscription.php" class="bootstrap-iso" id="form" name="formulaire">
             <div class="row">
                 <div class="col-sm-6">
@@ -197,4 +188,3 @@
         });
 
     </script>
-</body>
