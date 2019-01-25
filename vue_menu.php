@@ -7,10 +7,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" style="font-size:1.5em; color:white;" href="?page=homme">Homme | <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" style="font-size:1.5em; color: white;" href="?page=femme">Femme</a>
+                <a class="nav-link" style="font-size:1.5em; color:white;" href="?page=article">Articles<span class="sr-only">(current)</span></a>
             </li>
         </ul>
         <nav class="navbar navbar-light bg-dark">
@@ -23,11 +20,9 @@
 </nav>
 
 <?php
-
 if(isset($_GET['page'])){
    $page = $_GET['page'];
 }else{
    $page = "";
 }
-
 ?>

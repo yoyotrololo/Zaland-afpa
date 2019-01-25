@@ -1,9 +1,7 @@
 <?php
 
 switch($page){
-    case "homme": include('./vue_homme.php');
-        break;
-    case "femme": include('./vue_femme.php');
+    case "article": include('./vue_article.php');
         break;
     case "accueil": include('./vue_accueil.php');
         break;
