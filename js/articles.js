@@ -1,4 +1,3 @@
-<script>
 // product constraction
 function shirt(name, size, color, stock, image){
 	this.name = name
@@ -105,6 +104,4 @@ for(var i = 0; i < shirtArray.length; i++) {
 	newItem.appendChild(newDiv)
 
 	// add new item to the element with id="shirts"
-	document.getElementById("products").appendChild(newItem)
-}
-    </script>   
+	document.getElementById("products").appendChild(newItem) 
