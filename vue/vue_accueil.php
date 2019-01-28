@@ -29,7 +29,7 @@
         
     </div>
     <div class="carousel-item" class="col-sm-2">
-      <img src="./img/chemise_jeans.jpg" class="d-block w-25" alt="...">
+      <img src="./img/chemise_jean.jpg" class="d-block w-25" alt="...">
     </div>
     <div class="carousel-item" class="col-sm-2">
       <img src="./img/pantalon.jpg" class="d-block w-25" alt="...">
