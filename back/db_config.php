@@ -1,6 +1,4 @@
 <?php 
-namespace back;
+define('DB_USER', 'saliou');
 
-define('DB_USER', 'quentin');
-
-define('DB_PASSWORD', 'quentin');
+define('DB_PASSWORD', 'saliou');
