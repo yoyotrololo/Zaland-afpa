@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+/*session_start();*/
 
 try
 {
@@ -11,8 +11,6 @@ catch (Exception $e)
 {
         die('Erreur : ' . $e->getMessage());
 }
-
-// Hachage du mot de passe
 
 
 // Insertion
@@ -41,7 +39,7 @@ $req->execute(array(
     'CP'=> $_POST['CP'],
     'ville'=> $_POST['ville'],
     'pays'=> $_POST['pays'],
-    'mail'=> $_POST['mail'],
+    'mail'=> $mail,
     'pass'=> $pass_hache,
     'genre'=> $_POST['genre'],
     'dateNaissance'=> $_POST['dateNaissance']
@@ -49,8 +47,8 @@ $req->execute(array(
 ));
 }
 
+}
 
-
-header('Location: connexion.php');
+/*header('Location: connexion.php');*/
 
 ?>
