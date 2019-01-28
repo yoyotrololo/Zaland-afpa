@@ -18,8 +18,8 @@
 						<a data-type="all" href="#0">Tous les articles</a> <!-- selected option on mobile -->
 					</li> 
 					<li class="filter"><a class="selected" href="#0" data-type="all">Tous les articles</a></li>
-					<li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Homme</a></li>
-					<li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Femme</a></li>
+					<li class="filter" data-filter=".color-1"><a id="femme" href="#0" data-type="color-1">Homme</a></li>
+					<li class="filter" data-filter=".color-2"><a id="homme" href="#0" data-type="color-2">Femme</a></li>
 				</ul> <!-- cd-filters -->
 			</div> <!-- cd-tab-filter -->
 		</div> <!-- cd-tab-filter-wrapper -->
