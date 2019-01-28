@@ -1,0 +1,26 @@
+.headingTitle {
+	font-size:70px;
+	color: orange;
+	text-decoration: underline;
+}
+
+.tshirt {
+	margin:20px 0;
+	background-color: #ED0000;
+}
+.newH1{
+	color: orange;
+	text-decoration: underline;
+}
+
+.dropdown{
+	width: 150px;
+	height: 50px;
+	background-color: #ED0000;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #ED0000;
+	text-align: center;
+
+}
