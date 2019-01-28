@@ -1,11 +1,11 @@
 <?php
-
+require_once('db_config.php');
 /*session_start();*/
 
 try
 {
     //connexion avec la BDD
-	$bdd = new PDO('mysql:host=172.14.140.8;dbname=zalandafpa;charset=utf8', 'madeline', 'madeline');
+	$bdd = new PDO('mysql:host=172.14.140.8;dbname=zalandafpa;charset=utf8', DB_USER, DB_PASSWORD);
 }
 catch (Exception $e)
 {

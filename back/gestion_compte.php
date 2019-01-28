@@ -1,10 +1,11 @@
 <?php
+require_once('db_config.php');
 
 session_start();
 
 try 
 {
-	$bdd = new PDO('mysql:host=172.14.140.8:3306;dbname=zalandafpa;charset=utf8','jonathan','123', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+	$bdd = new PDO('mysql:host=172.14.140.8:3306;dbname=zalandafpa;charset=utf8',DB_USER, DB_PASSWORD, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 }
 catch (Exception $e)	//permet de capturer l'exception en cas d'erreur, et d'éviter que le mot de passe ne s'affiche
 {
