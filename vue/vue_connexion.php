@@ -30,7 +30,7 @@
             </div>
             <div class="modal-body">
 
-                <form method="post" action="inscription.php" class="bootstrap-iso" name="formulaire">
+                <form method="post" action="./back/inscription.php" class="bootstrap-iso" name="formulaire">
                     <div class="row">
                         <div class="col-sm-6">
                             <h5>Nom :</h5>

@@ -6,9 +6,9 @@
             <div class="col-sm-8">
                 <h1>Zaland'Afpa</h1>
             </div>
-            <?php
-           if (isset($_SESSION['connexion'])) {
-                ?>
+            <?php         
+            if(isset($_SESSION['connexion'])){
+            ?>
             <div class="col-sm-2">
                 <nav class="navbar navbar-expand-lg ">
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -53,7 +53,7 @@
         </div>
     </div>
     <?php
-     include('./vue/vue_connexion.php');
+    include('./vue/vue_connexion.php');
     ?>
 </header>
 

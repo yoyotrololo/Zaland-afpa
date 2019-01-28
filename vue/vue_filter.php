@@ -2,9 +2,9 @@
 <head>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<link rel="stylesheet" href="./css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="./css/style.css"> <!-- Resource style -->
+	<script src="./js/modernizr.js"></script> <!-- Modernizr -->
   	
 </head>
 <body>

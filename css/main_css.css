@@ -1,21 +1,15 @@
 @font-face {
     font-family: "perfectly_amicable_scratchy";
-    src: url('./police/perfectly_amicable_scratchy.ttf') ;
+    src: url('perfectly_amicable_scratchy.ttf') ;
 }
 
 
-#block{
-
-    border-color: dimgrey;
-    border-bottom-style: solid;
-    border-width: 1px;
-}
 
 #slider {
     width: 100%;
     max-width: 850px;
     overflow: hidden;
-  
+    margin-bottom: 20px; 
 }
 
 #slider figure {
@@ -67,4 +61,3 @@ header{
     border-color:  #c82333;
 
 }
-
