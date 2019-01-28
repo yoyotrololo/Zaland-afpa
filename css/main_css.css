@@ -46,6 +46,11 @@ h1{
     color: white;
     font-family: perfectly_amicable_scratchy;
 }
+#titre_gestion h2{
+     font-size: 5rem;
+    text-align: center;
+    font-family: perfectly_amicable_scratchy;
+}
 
 header{
     background-color: #343a40;

@@ -1,9 +1,6 @@
-<head>
-  
 
-</head>
     <div class="col-md-6 offset-md-3 shadow p-3 mb-5 bg-white ">
-        <div id="titre_gestion"><h1>Gestion de compte</h1></div>
+        <div id="titre_gestion"><h2>Gestion de compte</h2></div>
         <form method="post" action="inscription.php" class="bootstrap-iso" id="form" name="formulaire">
             <div class="row">
                 <div class="col-sm-6">
