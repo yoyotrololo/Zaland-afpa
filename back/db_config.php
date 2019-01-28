@@ -1,4 +1,4 @@
 <?php 
-define('DB_USER', 'jonathan');
+define('DB_USER', 'quentin');
 
-define('DB_PASSWORD', '123');
+define('DB_PASSWORD', 'quentin');
