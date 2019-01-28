@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="main_css.css">
+<link rel="stylesheet" type="text/css" href="./css/main_css.css">
 <header>
     <div class="container-fluid">
         <div class="row">
