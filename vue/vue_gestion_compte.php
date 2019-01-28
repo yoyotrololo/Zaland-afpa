@@ -118,32 +118,6 @@
         </form>
     </div>
 
-
-
-
-
-
-
-
-
-
-    <!-- ATTENTION : l'attribut 'name' de chaque input doit correspondre exactement aux noms de champs de la table 'clients' -->
-<!--
-    <div id="div_contenu">
-        <form action='' method='' id="form_maj">
-            <input type='text' name='prenom' placeholder="prenom" id="prenom">
-            <input type='text' name='nom' placeholder="nom" id="nom">
-            <input type='text' name='genre' placeholder="genre" id="genre">
-            <input type='text' name='ville' placeholder="ville" id="ville">
-            <input type='text' name='pays' placeholder="pays" id="pays">
-            <input type='text' name='CP' placeholder="CP" id="CP">
-            <button type='button' id='btn_maj'>Mettre à jour</button>
-        </form>
-        <p id="p_reponse">Réponse du PHP</p>
-        <button type='button' id='btn_sup'>Supprimer compte</button>
-    </div>
--->
-
     <script>
         //REQUETE POUR METTRE A JOUR LES INFOS
         $(document).ready(function() {
