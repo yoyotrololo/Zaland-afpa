@@ -5,7 +5,7 @@ require_once('./class/articles.php');
 try
 {
     //connexion avec la BDD
-	$bdd = new PDO('mysql:host=172.14.140.8;dbname=zalandafpa;charset=utf8', DB_USER, DB_PASSWORD);
+	$bdd = new PDO('mysql:host=172.14.140.8;dbname=zalandafpa;charset=utf8', 'madeline', 'madeline');
 }
 catch (Exception $e)
 {
