@@ -49,4 +49,6 @@ $req->execute(array(
 
 }
 
+header('Location: connexion.php');
+
 ?>
