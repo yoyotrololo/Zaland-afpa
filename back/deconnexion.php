@@ -1,8 +1,8 @@
 <?php
+	session_start();
 
-session_start();
-session_unset();
-session_destroy();
-header('Location: connexion.php');
-exit();
+	if (isset($_SESSION['connexion'])) {
+		session_unset();
+		session_destroy();
+	}
 ?>

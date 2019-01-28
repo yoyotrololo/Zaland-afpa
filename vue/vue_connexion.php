@@ -5,7 +5,7 @@
                 <h2>Connexion</h2>
             </div>
             <div class="modal-body">
-                <form method="post" action="./back/connexion.php">
+                <form method="" action="">
                     <div class="form-row">
                         <label for="recipient-name" class="col-form-label">E-mail : </label>
                         <input class="form-control has-error" id="mail" name="mail" placeholder="Email" type="mail" />
@@ -15,7 +15,8 @@
                         <input class="form-control has-error" id="pass" name="pass" type="password" />
                     </div>
                     <br>
-                    <input type="submit" value="Connexion" class="btn btn-primary">
+                    <p id="p_erreurCo"></p>
+                    <input type="button" id="btn_connexion" value="Connexion" class="btn btn-primary">
                 </form>
             </div>
             <div class="modal-footer">
@@ -160,6 +161,7 @@
 </div>
 
 <script>
+
     document.getElementById("form_inscription").style.display = 'none';
     $("#inscription").click(function() {
         var inscription = document.getElementById("connexion");
@@ -167,5 +169,27 @@
             inscription.removeChild(inscription.firstChild);
         }
         document.getElementById("form_inscription").style.display = 'block';
-    })
+    });
+
+
+    $(document).ready(function(){
+        $('#btn_connexion').click(function() {         
+            var requete = $.post('back/connexion.php', {
+                mail: $('#mail').val(),
+                pass: $('#pass').val()
+            })
+            .always(function() {
+                reponse = requete.responseText;
+                if (reponse == 'Mauvais identifiant ou mot de passe !') {
+                    $('#p_erreurCo').text('Mauvais identifiant ou mot de passe !');
+                } else {
+                    location.reload();  
+                }
+            });
+        });
+        
+    });
+
+
 </script>
+

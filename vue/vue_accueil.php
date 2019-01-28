@@ -17,7 +17,7 @@
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <div class="row">
-        <div class="col-sm-3"></div>
+
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -30,6 +30,21 @@
     </div>
     <div class="carousel-item" class="col-sm-2">
       <img src="./img/chemise_jean.jpg" class="d-block w-25" alt="...">
+
+        
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active" class="col-sm-2">
+      <img src="./img/chemise_bleue.jpg" class="d-block w-25" alt="...">
+        
+    </div>
+    <div class="carousel-item" class="col-sm-2">
+      <img src="./img/chemise_jeans.jpg" class="d-block w-25" alt="...">
+
     </div>
     <div class="carousel-item" class="col-sm-2">
       <img src="./img/pantalon.jpg" class="d-block w-25" alt="...">

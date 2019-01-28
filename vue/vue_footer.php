@@ -9,7 +9,7 @@
 <hr class="clearfix w-100 d-md-none">
 
         <!-- Grid column -->
-        <div class="col-md-6 mx-auto">
+        <div class="col-md-5 mx-auto">
 
           <!-- Links -->
           <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Aide</h5>
@@ -51,7 +51,7 @@
         <hr class="clearfix w-100 d-md-none">
 
         <!-- Grid column -->
-        <div class="col-md-3 mx-auto">
+        <div class="col-md-4 mx-auto">
 
           <!-- Links -->
           <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Chèques cadeaux</h5>
