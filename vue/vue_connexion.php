@@ -30,7 +30,7 @@
             </div>
             <div class="modal-body">
 
-                <form method="post" action="./back/inscription.php" class="bootstrap-iso" name="formulaire">
+                <form class="bootstrap-iso" name="formulaire">
                     <div class="row">
                         <div class="col-sm-6">
                             <h5>Nom :</h5>
@@ -49,7 +49,7 @@
                                 <div class="input-group-addon">
                                     <i class="far fa-user"></i>
                                 </div>
-                                <input class="form-control has-error" name="prenom" placeholder="Prenom" type="text" />
+                                <input class="form-control has-error" id="prenom" name="prenom" placeholder="Prenom" type="text" />
                             </div>
                         </div>
                     </div>
@@ -60,7 +60,7 @@
                                 <div class="input-group-addon">
                                     <i class="fas fa-transgender"></i>
                                 </div>
-                                <select class="form-control has-error" name="genre" type="text">
+                                <select class="form-control has-error" id="genre" name="genre" type="text">
                                     <option>HOMME</option>
                                     <option>FEMME</option>
                                 </select>
@@ -74,7 +74,7 @@
                                 <div class="input-group-addon">
                                     <i class="fas fa-birthday-cake"></i>
                                 </div>
-                                <input class="form-control has-error" name="dateNaissance" type="date" />
+                                <input class="form-control has-error" id="dateNaissance" name="dateNaissance" type="date" />
                             </div>
                         </div>
                     </div>
@@ -85,7 +85,7 @@
                                 <div class="input-group-addon">
                                     <i class="fa fa-map-marker"></i>
                                 </div>
-                                <input class="form-control has-error" name="numRue" placeholder="Numéro" type="text" />
+                                <input class="form-control has-error" name="numRue" id="numRue" placeholder="Numéro" type="text" />
                             </div>
                         </div>
                         <div class="col-sm-4">
@@ -94,7 +94,7 @@
                                 <div class="input-group-addon">
                                     <i class="fa fa-map-marker"></i>
                                 </div>
-                                <input class="form-control has-error" name="nomRue" placeholder="Adresse" type="text" />
+                                <input class="form-control has-error" name="nomRue" id="nomRue" placeholder="Adresse" type="text" />
                             </div>
                         </div>
                     </div>
@@ -105,7 +105,7 @@
                                 <div class="input-group-addon">
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>
-                                <input class="form-control has-error" name="CP" placeholder="Postal" type="text" />
+                                <input class="form-control has-error" name="CP" id="CP"  placeholder="Postal" type="text" />
                             </div>
                         </div>
                         <div class="col-sm-4">
@@ -114,7 +114,7 @@
                                 <div class="input-group-addon">
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>
-                                <input class="form-control has-error" name="ville" placeholder="Ville" type="text" />
+                                <input class="form-control has-error" name="ville" id="ville" placeholder="Ville" type="text" />
                             </div>
                         </div>
                         <div class="col-sm-4">
@@ -123,7 +123,7 @@
                                 <div class="input-group-addon">
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>
-                                <input class="form-control has-error" name="pays" placeholder="Pays" type="text" />
+                                <input class="form-control has-error" name="pays" id="pays" placeholder="Pays" type="text" />
                             </div>
                         </div>
                     </div>
@@ -134,7 +134,7 @@
                                 <div class="input-group-addon">
                                     <i class="fa fa-at"></i>
                                 </div>
-                                <input class="form-control has-error" name="mail" placeholder="E-mail" type="email" />
+                                <input class="form-control has-error" name="mail" id="mail" placeholder="E-mail" type="email" />
                             </div>
                         </div>
                     </div>
@@ -145,13 +145,13 @@
                                 <div class="input-group-addon">
                                     <i class="fab fa-expeditedssl"></i>
                                 </div>
-                                <input class="form-control has-error" name="pass" placeholder="Mot de passe" type="password" />
+                                <input class="form-control has-error" name="pass" id="pass" placeholder="Mot de passe" type="password" />
                             </div>
                         </div>
                     </div>
-                    <input class="btn btn-primary" id="envoyer_mail" type="submit" value="Inscription">
+                    <input class="btn btn-primary" id="btn_inscription" type="button" value="Inscription">
                 </form>
-
+                <p id="reponse_inscri"></p>
             </div>
             <div class="modal-footer">
                 <a href="#" id="inscription">S'inscrire</a> / <a>Mot de passe oublié</a>
@@ -161,7 +161,6 @@
 </div>
 
 <script>
-
     document.getElementById("form_inscription").style.display = 'none';
     $("#inscription").click(function() {
         var inscription = document.getElementById("connexion");
@@ -169,27 +168,49 @@
             inscription.removeChild(inscription.firstChild);
         }
         document.getElementById("form_inscription").style.display = 'block';
-    });
+    })
 
 
-    $(document).ready(function(){
-        $('#btn_connexion').click(function() {         
-            var requete = $.post('back/connexion.php', {
-                mail: $('#mail').val(),
-                pass: $('#pass').val()
-            })
-            .always(function() {
-                reponse = requete.responseText;
-                if (reponse == 'Mauvais identifiant ou mot de passe !') {
-                    $('#p_erreurCo').text('Mauvais identifiant ou mot de passe !');
-                } else {
-                    location.reload();  
-                }
-            });
+    $(document).ready(function() {
+
+        $('#btn_inscription').click(function() {
+            var requete = $.post('back/inscription.php', {
+                    nom: $('#nom').val(),
+                    prenom: $('#prenom').val(),
+                    numRue: $('#numRue').val(),
+                    nomRue: $('#nomRue').val(),
+                    CP: $('#CP').val(),
+                    ville: $('#ville').val(),
+                    pays: $('#pays').val(),
+                    mail: $('#mail').val(),
+                    pass: $('#pass').val(),
+                    genre: $('#genre').val(),
+                    dateNaissance: $('#dateNaissance').val()
+                })
+                .always(function() {
+                     reponse = requete.responseText;          
+                     if (reponse == "Un compte existe déjà avec cet email") {
+                        $('#reponse_inscri').text('Un compte existe déjà avec cet email');
+                     } else { 
+                       $('#reponse_inscri').text('Votre compte a bien été créé'); }
+                })
         });
-        
-    });
 
+        $('#btn_connexion').click(function() {
+            var requete = $.post('back/connexion.php', {
+                    mail: $('#mail').val(),
+                    pass: $('#pass').val()
+                })
+                .always(function() {
+                    reponse = requete.responseText;
+                    if (reponse == 'Mauvais identifiant ou mot de passe !') {
+                        $('#p_erreurCo').text('Mauvais identifiant ou mot de passe !');
+                    } else {
+                        location.reload();
+                    }
+                });
+        });
+
+    })
 
 </script>
-

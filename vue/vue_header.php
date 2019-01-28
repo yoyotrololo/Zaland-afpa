@@ -17,7 +17,7 @@
                             <li class="nav-item dropdown">
                                 <div class="form-group input-group ">
                                     <div class="input-group-addon">
-                                        <a class="nav-link fa fa-user " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size:30px"></a>
+                                        <a class="nav-link fa fa-user " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size:30px"></a>
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                             <a class="dropdown-item" href="?page=vue_gestion">Gestion compte</a>
                                             <a class="dropdown-item" href="#">Mes commandes</a>

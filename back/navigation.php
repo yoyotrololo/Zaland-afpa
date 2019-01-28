@@ -9,7 +9,7 @@ switch($page){
         break;
     case "vue_gestion": include('./vue/vue_gestion_compte.php');
         break;
-    case "vue_panier": include('./vue/vue_panier.php');
+    case "vue_panier": include('./panier.php');
         break;
     default: include('./vue/vue_accueil.php');
         break;

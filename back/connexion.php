@@ -16,7 +16,7 @@ if (isset($_POST['mail']) && isset($_POST['pass'])) {
     $mail = htmlspecialchars($_POST['mail']);
     $pass_hache = password_hash($_POST['pass'], PASSWORD_DEFAULT);
 
-$req = $bdd->prepare('SELECT id_client, pass, prenom FROM clients WHERE mail = :mail');
+$req = $bdd->prepare('SELECT ID_client, pass, prenom FROM clients WHERE mail = :mail');
 $req->execute(array(
     'mail' => $mail));
     $resultat = $req->fetch();
@@ -36,17 +36,12 @@ else
         $_SESSION['mail'] = $mail;
         $_SESSION['prenom'] = $resultat['prenom'];
         $_SESSION['connexion'] = true;
-        echo 'Vous êtes connecté !';   
+        echo 'Vous êtes connecté !';
         header('location:../');
     }
     else {
         echo 'Mauvais identifiant ou mot de passe !';
+        }
     }
 }
-
-
-}
-
-
-
 ?>
