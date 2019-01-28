@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "perfectly_amicable_scratchy";
+    src: url('perfectly_amicable_scratchy.ttf') ;
+}
+
+
+
+#slider {
+    width: 100%;
+    max-width: 850px;
+    overflow: hidden;
+    margin-bottom: 20px; 
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+    animation: 30s slidy infinite;
+}
+
+#slider img {
+    width: 20%;
+    height: auto;
+    float: left;
+}
+
+@keyframes slidy {
+    0% {left: 0%}
+    20% {left: 0%}
+    25% {left: -100%}
+    45% {left: -100%}
+    50% {left: -200%}
+    70% {left: -200%}
+    75% {left: -300%}
+    95% {left: -300%}
+    100% {left: -400%}
+}
+
+h1{
+    font-size: 10rem;
+    text-align: center;
+    color: white;
+    font-family: perfectly_amicable_scratchy;
+}
+
+header{
+    background-color: #343a40;
+}
+
+
+.btn-outline-success{
+    border-color: white;
+}
+
+.btn-outline-success:hover{
+    background-color: #c82333;
+    border-color:  #c82333;
+
+}
