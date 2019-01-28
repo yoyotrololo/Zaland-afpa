@@ -1,44 +1,8 @@
 @font-face {
     font-family: "perfectly_amicable_scratchy";
-    src: url('perfectly_amicable_scratchy.ttf') ;
+    src: url('../police/perfectly_amicable_scratchy.ttf') ;
 }
 
-
-
-#slider {
-    width: 100%;
-    max-width: 850px;
-    overflow: hidden;
-    margin-bottom: 20px; 
-}
-
-#slider figure {
-    position: relative;
-    width: 500%;
-    margin: 0;
-    padding: 0;
-    font-size: 0;
-    text-align: left;
-    animation: 30s slidy infinite;
-}
-
-#slider img {
-    width: 20%;
-    height: auto;
-    float: left;
-}
-
-@keyframes slidy {
-    0% {left: 0%}
-    20% {left: 0%}
-    25% {left: -100%}
-    45% {left: -100%}
-    50% {left: -200%}
-    70% {left: -200%}
-    75% {left: -300%}
-    95% {left: -300%}
-    100% {left: -400%}
-}
 
 h1{
     font-size: 10rem;
@@ -63,16 +27,60 @@ header{
 }
 
 .carousel-inner {
-    background-color: #504E4E;
- 
+    background-color: lightgrey;
 }
-
-.carousel-indicators {
-    background-color: #504E4E;
+.d-block{
+   padding-left: 33.7%;
+}
     
-}
+
 
 .carousel-item {
     width:100%;
-    height:90%;
+    height:100%;
+}
+.header{
+    background-color: #343a40;
+}
+.card-img-top{
+    height: 100%;
+}
+
+#cards{
+    background-color: lightgrey;
+    height: auto;
+}
+#espace{
+    height: 5%;
+    background-color: lightgrey;
+    
+}
+
+.container-fluid h2{
+    text-align: center;
+    font-size: 80px;
+    font-family: perfectly_amicable_scratchy;
+    background-color:#343a40;
+    color:white;
+    margin: 0px;
+    padding: 1%;
+}
+
+.page-footer {
+    background-color: #343a40;
+}
+.font-weight-bold{
+    color:white;
+}
+
+.list-unstyled{
+    color:white;
+}
+
+.list-unstyled li a{
+    color: white;
+}
+
+.footer-copyright{
+    color:white;
 }
