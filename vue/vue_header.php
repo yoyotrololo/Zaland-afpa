@@ -6,7 +6,8 @@
             <div class="col-sm-8">
                 <h1>Zaland'Afpa</h1>
             </div>
-            <?php         
+            <?php  
+          
             if(isset($_SESSION['connexion'])){
             ?>
             <div class="col-sm-2">
@@ -18,7 +19,7 @@
                                     <div class="input-group-addon">
                                         <a class="nav-link fa fa-user " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size:30px"></a>
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                            <a class="dropdown-item" href="#">Gestion compte</a>
+                                            <a class="dropdown-item" href="?page=vue_gestion">Gestion compte</a>
                                             <a class="dropdown-item" href="#">Mes commandes</a>
                                         </div>
                                     </div>
@@ -27,7 +28,7 @@
                             <li class="nav-item dropdown">
                                 <div class="form-group input-group ">
                                     <div class="input-group-addon">
-                                        <a class="nav-link fa fa-shopping-basket " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size:32px"></a>
+                                        <a class="nav-link fa fa-shopping-basket " href="?page=vue_panier"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size:32px"></a>
                                     </div>
                                 </div>
                             </li>
