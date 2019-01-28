@@ -5,7 +5,7 @@
                 <h2>Connexion</h2>
             </div>
             <div class="modal-body">
-                <form method="post" action="connexion.php">
+                <form method="post" action="back/connexion.php">
                     <div class="form-row">
                         <label for="recipient-name" class="col-form-label">E-mail : </label>
                         <input class="form-control has-error" id="mail" name="mail" placeholder="Email" type="mail" />
@@ -15,6 +15,7 @@
                         <input class="form-control has-error" id="pass" name="pass" type="password" />
                     </div>
                     <br>
+                    <p id="p_erreurCo"></p>
                     <input type="submit" value="Connexion" class="btn btn-primary">
                 </form>
             </div>
@@ -169,3 +170,4 @@
         document.getElementById("form_inscription").style.display = 'block';
     })
 </script>
+

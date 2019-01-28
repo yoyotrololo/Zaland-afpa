@@ -7,11 +7,7 @@
                 <h1>Zaland'Afpa</h1>
             </div>
             <?php
-            $etatSession = session_status();
-            //$etatSession = 2;
-            if ($etatSession == 2) {
-            
-            //if($_SESSION['connexion']){
+           if (isset($_SESSION['connexion'])) {
                 ?>
             <div class="col-sm-2">
                 <nav class="navbar navbar-expand-lg ">
@@ -38,7 +34,7 @@
                             <li class="nav-item dropdown">
                                 <div class="form-group input-group ">
                                     <div class="input-group-addon">
-                                        <a class="nav-link fa fa-power-off" alt="se déconnecter" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size:32px"></a>
+                                        <a class="nav-link fa fa-power-off" alt="se déconnecter" href="#" id="btn_deconnexion" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size:32px"></a>
                                     </div>
                                 </div>
                             </li>
@@ -60,3 +56,18 @@
      include('./vue/vue_connexion.php');
     ?>
 </header>
+
+<script>
+
+    $(document).ready(function(){
+        $('#btn_deconnexion').click(function() {
+            var requete = $.get('back/deconnexion.php', function() {
+            })
+            .always(function() {
+                console.log(requete.responseText);
+                location.reload();
+            });
+        });
+    });
+
+</script>
