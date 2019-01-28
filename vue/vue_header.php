@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="main_css.css">
+<link rel="stylesheet" type="text/css" href="./css/main_css.css">
 <header>
     <div class="container-fluid">
         <div class="row">
@@ -7,11 +7,13 @@
                 <h1>Zaland'Afpa</h1>
             </div>
             <?php
+            session_start();
             $etatSession = session_status();
+            //var_dump($etatSession);
             //$etatSession = 2;
-            if ($etatSession == 2) {
+            //if ($etatSession == 2) {
             
-            //if($_SESSION['connexion']){
+            if(isset($_SESSION['connexion'])){
                 ?>
             <div class="col-sm-2">
                 <nav class="navbar navbar-expand-lg ">
@@ -57,6 +59,8 @@
         </div>
     </div>
     <?php
-     include('./vue_connexion.php');
+    //}
+    include('./vue/vue_connexion.php');
+    
     ?>
 </header>
