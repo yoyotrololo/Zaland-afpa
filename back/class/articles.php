@@ -1,5 +1,7 @@
 <?php
 
+/*require_once*/
+
 class articles {
     
     private $ID_article;
@@ -13,10 +15,19 @@ class articles {
     
 }
 
-private function classArticles()
+ private function __construct($ID_article, $nom, $genre, $type, $couleur, $taille, $prix, $lien_image)
     {
-		
+        $this->ID_article = $ID_article;
+        $this->nom = $nom;
+        $this->genre = $genre;
+        $this->type = $type;
+        $this->couleur = $couleur;
+        $this->taille = $taille;
+        $this->prix = $prix;
+        $this->lien_image = $lien_image;
     }
+
+
 
 
 public function getID_article() {
