@@ -87,7 +87,9 @@ include ('./vue/vue_cards.php');
         </div>
     </div>
 
-
+<div class="container-fluid">
+<div class="row" id="espace"></div>
+</div>
 
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
