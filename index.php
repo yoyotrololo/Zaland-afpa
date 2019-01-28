@@ -24,13 +24,13 @@
  
     <?php
       
-        include('./vue_header.php');
-        include('./vue_menu.php');
+        include('.vue/vue_header.php');
+        include('.vue/vue_menu.php');
       
       //Corps de la page, récupération en $_GET
-       include('./navigation.php');
+       include('.back/navigation.php');
        
-        include('./vue_footer.php');
+        include('.vue/vue_footer.php');
     ?>
       
       
