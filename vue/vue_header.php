@@ -64,7 +64,6 @@
             var requete = $.get('back/deconnexion.php', function() {
             })
             .always(function() {
-                console.log(requete.responseText);
                 location.reload();
             });
         });

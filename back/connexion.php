@@ -41,6 +41,8 @@ else
     }
     else {
         echo 'Mauvais identifiant ou mot de passe !';
+        //header("Location: http://localhost/Zaland-afpa/");
+
     }
 }
 
