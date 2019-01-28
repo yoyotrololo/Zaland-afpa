@@ -13,7 +13,7 @@ class articles {
     
 }
 
- private function __construct($ID_article, $nom, $genre, $type, $couleur, $taille, $prix, $lien_image)
+ function __construct($ID_article, $nom, $genre, $type, $couleur, $taille, $prix, $lien_image)
     {
         $this->ID_article = $ID_article;
         $this->nom = $nom;
@@ -28,7 +28,7 @@ class articles {
 
 
 
-public function getID_article() {
+function getID_article() {
     return $this->ID_article;
 }
 
