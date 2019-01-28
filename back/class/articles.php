@@ -1,7 +1,5 @@
 <?php
 
-/*require_once*/
-
 class articles {
     
     private $ID_article;

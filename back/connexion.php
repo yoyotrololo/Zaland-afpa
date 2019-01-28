@@ -1,9 +1,10 @@
 <?php
+require_once('db_config.php');
 
  try
 {
     //connexion avec la BDD
-	$bdd = new PDO('mysql:host=172.14.140.8;dbname=zalandafpa;charset=utf8', 'madeline', 'madeline');
+	$bdd = new PDO('mysql:host=172.14.140.8;dbname=zalandafpa;charset=utf8', DB_USER, DB_PASSWORD);
 }
 catch (Exception $e)
 {
@@ -36,6 +37,8 @@ else
         $_SESSION['mail'] = $mail;
         echo 'Vous êtes connecté !';
         $_SESSION['connexion'] = true;
+        
+        header('location:../');
     }
     else {
         echo 'Mauvais email ou mot de passe !';

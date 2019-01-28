@@ -23,14 +23,14 @@
   <body>
  
     <?php
-      
-        include('./vue/vue_header.php');
-        include('./vue/vue_menu.php');
-      
-      //Corps de la page, récupération en $_GET
-       include('./back/navigation.php');
-       
-        include('./vue/vue_footer.php');
+
+    include('./vue/vue_header.php');
+    include('./vue/vue_menu.php');
+
+    //Corps de la page, récupération en $_GET
+    include('./back/navigation.php');
+
+    include('./vue/vue_footer.php');
     ?>
       
       
