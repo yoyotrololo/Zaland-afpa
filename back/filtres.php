@@ -1,6 +1,6 @@
 <?php
 require_once('db_config.php');
-require_once('articles.php');
+require_once('./class/articles.php');
 
 try
 {
