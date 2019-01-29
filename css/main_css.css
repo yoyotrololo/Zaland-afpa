@@ -4,51 +4,10 @@
 }
 
 
-
-#slider {
-    width: 100%;
-    max-width: 850px;
-    overflow: hidden;
-    margin-bottom: 20px; 
-}
-
-#slider figure {
-    position: relative;
-    width: 500%;
-    margin: 0;
-    padding: 0;
-    font-size: 0;
-    text-align: left;
-    animation: 30s slidy infinite;
-}
-
-#slider img {
-    width: 20%;
-    height: auto;
-    float: left;
-}
-
-@keyframes slidy {
-    0% {left: 0%}
-    20% {left: 0%}
-    25% {left: -100%}
-    45% {left: -100%}
-    50% {left: -200%}
-    70% {left: -200%}
-    75% {left: -300%}
-    95% {left: -300%}
-    100% {left: -400%}
-}
-
 h1{
     font-size: 10rem;
     text-align: center;
     color: white;
-    font-family: perfectly_amicable_scratchy;
-}
-#titre_gestion h2{
-     font-size: 5rem;
-    text-align: center;
     font-family: perfectly_amicable_scratchy;
 }
 
@@ -67,48 +26,89 @@ header{
 
 }
 
+.carousel-inner {
+    background-color: lightgrey;
+}
+.d-block{
+   padding-left: 33.7%;
+}
+    
 
 
-html, span, applet, object, iframe,
-h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+.carousel-item {
+    width:100%;
+    height:100%;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section, main {
-	display: block;
+.header{
+    background-color: #343a40;
 }
-body {
-	line-height: 1;
+.card-img-top{
+    height: 100%;
 }
-ol, ul {
-	list-style: none;
+
+#cards{
+    background-color: lightgrey;
+    height: auto;
 }
-blockquote, q {
-	quotes: none;
+
+#marge{
+    height: 15px;
+    background-color: #343a40;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+.container-fluid h2{
+    text-align: center;
+    font-size: 80px;
+    font-family: perfectly_amicable_scratchy;
+    background-color:#343a40;
+    color:white;
+    margin: 0px;
+    padding: 1%;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+#titre_gestion h2{
+     font-size: 5rem;
+    text-align: center;
+    font-family: perfectly_amicable_scratchy;
+}
+
+.page-footer {
+    background-color: #343a40;
+}
+.font-weight-bold{
+    color:#c82333;
+}
+
+.list-unstyled li a{
+    color: white;
+}
+
+.fa-facebook-f:before {
+    color:#3B5998;
+    font-size: 30px;
+}
+
+.fa-twitter:before{
+    color:#55ACEE;
+    font-size: 30px;
+}
+
+.fa-google:before{
+    color: #dd4b39;
+    font-size: 30px;
+}
+
+.fa-linkedin:before{
+    color: #007bb5;
+    font-size: 30px;
+}
+
+.footer-copyright{
+    color:white;
+}
+.footer-copyright a{
+    text-decoration: none;
+    color: white;
+}
+.footer-copyright a:hover{
+    color:#c82333;
 }

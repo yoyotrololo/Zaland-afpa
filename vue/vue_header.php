@@ -5,11 +5,13 @@
             <div class="offset-sm-2 "></div>
             <div class="col-sm-8">
                 <h1>Zaland'Afpa</h1>
+                
             </div>
             <?php  
           
             if(isset($_SESSION['connexion'])){
             ?>
+            
             <div class="col-sm-2">
                 <nav class="navbar navbar-expand-lg ">
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
