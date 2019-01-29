@@ -51,11 +51,11 @@
 
 
                 $(".btn_genre").click(function() {
-                        //            var target = $(event.target);
-                        //            
-                        //			$('.cd-tab-filter .selected').removeClass('selected');
-                        //			target.addClass('selected');
-                        //            
+                                    /*var target = $(event.target);
+                                    
+                        			$('.cd-tab-filter .selected').removeClass('selected');
+                        			target.addClass('selected');*/
+                                    
 
                         console.log($(this));
                         //$(this).addClass('selected');
@@ -76,14 +76,33 @@
                                             li_article.setAttribute('class', 'mix color-1 check1 radio2 option3');
                                             $(li_article).append(balise_img);
                                             $('#articles').append(li_article);
+                                          
+                                
                                             var nom = article.nom;
                                             var prix = article.prix;
-                                            $(li_article).hover(function() {
+                                        
+                                            $(li_article).append(nom);
+                                            $(li_article).append(prix);
+                                                                                      
+                                            $(nom).hide();
+                                            $(prix).hide();
+                                           
+                                           $(li_article).mousedown(function() {
+                                                $(nom).show();
+                                                $(prix).show();
+                                            });
+                                            $(li_article).mouseup(function(){
+                                                $(nom).hide();
+                                                $(prix).hide();
+                                               
+                                            })
+                                        
+                                           
+                                          /*  $(li_article).hover(function() {
                                                    $(this).append(nom);
                                                    $(this).append(prix);
-                                              
                                                 })
-                                         
+                                         */
                                             })
                                     })
                             })
