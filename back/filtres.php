@@ -1,6 +1,6 @@
 <?php
 require_once('db_config.php');
-require_once('articles.php');
+require_once('./class/articles.php');
 
 try
 {
@@ -12,16 +12,31 @@ catch (Exception $e)
         die('Erreur : ' . $e->getMessage());
 }
 
-$req = $bdd->query('SELECT * FROM articles WHERE genre = "Femme"');
+if(isset($_GET['genre'])) {
+    switch($_GET['genre']) {
+        case 'Homme':
+            $req = $bdd->query('SELECT * FROM articles WHERE genre = "Homme"');
+            break;
+        case 'Femme':
+            $req = $bdd->query('SELECT * FROM articles WHERE genre = "Femme"');
+            break;
+        case 'All':
+            $req = $bdd->query('SELECT * FROM articles');
+            break;
+    } 
+} else {
+    //récupère les articles homme ET femme   
+    $req = $bdd->query('SELECT * FROM articles');
+}
+
+$tab_article = array();
 
 while ($donnees = $req->fetch())
 
 {
     $article = new articles($donnees['ID_article'], $donnees['nom'], $donnees['genre'], $donnees['type'], $donnees['couleur'], $donnees['taille'], $donnees['prix'], $donnees['lien_image']);
-    var_dump($article);
     $tab_article[] = $article; 
-    
-    
-    echo json_encode($tab_article);
 }
+
+echo json_encode($tab_article);
 ?>
