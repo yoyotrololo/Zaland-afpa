@@ -50,10 +50,10 @@ header{
     background-color: lightgrey;
     height: auto;
 }
-#espace{
-    height: 5%;
-    background-color: lightgrey;
-    
+
+#marge{
+    height: 15px;
+    background-color: #343a40;
 }
 
 .container-fluid h2{
