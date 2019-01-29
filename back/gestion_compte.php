@@ -13,8 +13,8 @@ catch (Exception $e)	//permet de capturer l'exception en cas d'erreur, et d'évi
 } 
 
 $prenom = $_SESSION['prenom'];
-$id_client = $SESSION['id_client'];
-//$prenom = "madeline";
+$id_client = $_SESSION['ID_client'];
+//$prenom = "madelinE";
 //$id_client = 2;
 
 // ROUTEUR 
