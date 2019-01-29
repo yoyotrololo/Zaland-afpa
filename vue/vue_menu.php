@@ -11,7 +11,7 @@
             </li>
         </ul>
         <nav class="navbar navbar-light bg-dark">
-        <form action="barre_recherche.php" method="post" class="form-inline my-2 my-lg-0">
+        <form action="./back/barre_recherche.php" method="post" class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" name="rechercher" placeholder="Rechercher" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" onclick="" style="color:white;"><span class="fa fa-search"></span></button>
         </form>
