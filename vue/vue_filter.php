@@ -19,6 +19,11 @@
 					<li class="filter" data-filter=".color-1"><a name="Femme" id="Femme" class="btn_genre" href="#Femme" data-type="color-1">Femme</a></li>
 					<li class="filter" data-filter=".color-2"><a name="Homme" id="Homme" class="btn_genre" href="#Homme" data-type="color-2">Homme</a></li>
 				</ul> <!-- cd-filters -->
+                <section class="cd-gallery">
+			<ul>
+				<li class="mix color-1 check1 radio2 option3"><img src="img/img-1.jpg" alt="Image 1"></li>
+                    </ul>
+                </section>
 			</div> <!-- cd-tab-filter -->
 		</div> <!-- cd-tab-filter-wrapper -->
 
