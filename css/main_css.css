@@ -84,3 +84,11 @@ header{
 .footer-copyright{
     color:white;
 }
+.footer-copyright a{
+    text-decoration: none;
+    color: white;
+}
+.footer-copyright a:hover{
+    
+    color:#c82333;
+}
