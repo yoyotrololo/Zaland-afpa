@@ -29,10 +29,6 @@
     </div>
 </div>
 
-<?php
-include ('./vue/vue_cards.php');
-?>
-
 <div class="container-fluid" style="padding-right: 0px; padding-left:0px;">
 
     <h2>Notre sélection Femme</h2>
