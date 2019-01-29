@@ -1,7 +1,6 @@
 <head>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" href="./css/reset.css"> <!-- CSS reset -->
     <link rel="stylesheet" href="./css/style.css"> <!-- Resource style -->
 </head>
 
@@ -30,61 +29,62 @@
 
 <script>
     $(document).ready(function() {
-                var requete = $.get("http://localhost/zaland-afpa/back/filtres.php")
-                    .always(function() {
-                        var json = JSON.parse(requete.responseText);
-                        //console.log(json);
-                        $(json).each(function(i) {
-                            var article = json[i];
-                            var li_article = document.createElement('li');
-                            var balise_img = document.createElement('img');
-                            var url_img = "./img/" + article.lien_image;
-                            balise_img.setAttribute('src', url_img);
-                            li_article.setAttribute('class', 'mix color-1 check1 radio2 option3');
-                            $(li_article).append(balise_img);
-                            $('#articles').append(li_article);
-                        })
-                    })
-
-
-
-                $(".btn_genre").click(function() {
-                        //            var target = $(event.target);
-                        //            
-                        //			$('.cd-tab-filter .selected').removeClass('selected');
-                        //			target.addClass('selected');
-                        //            
-
-                        console.log($(this));
-                        //$(this).addClass('selected');
-                        $('#articles').empty();
-                        var genre = this.id;
-                        var requete = $.get("http://localhost/zaland-afpa/back/filtres.php", {
-                                genre: genre
-                            })
-                            .always(function() {
-                                    var json = JSON.parse(requete.responseText);
-                                    //console.log(json);
-                                    $(json).each(function(i) {
-                                            var article = json[i];
-                                            var li_article = document.createElement('li');
-                                            var balise_img = document.createElement('img');
-                                            var url_img = "./img/" + article.lien_image;
-                                            balise_img.setAttribute('src', url_img);
-                                            li_article.setAttribute('class', 'mix color-1 check1 radio2 option3');
-                                            $(li_article).append(balise_img);
-                                            $('#articles').append(li_article);
-                                            var nom = article.nom;
-                                            var prix = article.prix;
-                                            $(li_article).hover(function() {
-                                                   $(this).append(nom);
-                                                   $(this).append(prix);
-                                              
-                                                })
-                                         
-                                            })
-                                    })
-                            })
+        var requete = $.get("http://localhost/zaland-afpa/back/filtres.php")
+            .always(function() {
+                var json = JSON.parse(requete.responseText);
+                //console.log(json);
+                $(json).each(function(i) {
+                    var article = json[i];
+                    var li_article = document.createElement('li');
+                    var balise_img = document.createElement('img');
+                    var url_img = "./img/" + article.lien_image;
+                    balise_img.setAttribute('src', url_img);
+                    li_article.setAttribute('class', 'mix color-1 check1 radio2 option3');
+                    $(li_article).append(balise_img);
+                    $('#articles').append(li_article);
                 })
+            })
+
+
+
+        $(".btn_genre").click(function() {
+            var target = $(event.target);
+            $('.cd-tab-filter .selected').removeClass('selected');
+            target.addClass('selected');
+            $('#articles').empty();
+            var genre = this.id;
+            var requete = $.get("http://localhost/zaland-afpa/back/filtres.php", {
+                    genre: genre
+                })
+                .always(function() {
+                    var json = JSON.parse(requete.responseText);
+                    //console.log(json);
+                    $(json).each(function(i) {
+                        var article = json[i];
+                        var li_article = document.createElement('li');
+                        var balise_img = document.createElement('img');
+                        var url_img = "./img/" + article.lien_image;
+                        balise_img.setAttribute('src', url_img);
+                        li_article.setAttribute('class', 'mix color-1 check1 radio2 option3');
+                        $(li_article).append(balise_img);
+                        $('#articles').append(li_article);
+
+
+                        var nom = article.nom;
+                        var prix = article.prix;
+                        //                                            $(li_article).hover(function() {
+                        //                                                   $(this).append(nom);
+                        //                                                   $(this).append(prix):
+                        //                                            },
+                        //                                            function() {
+                        //                                                $(this).remove();
+                        //                                                $(this).remove();
+                        //                                            })
+
+
+                    })
+                })
+        })
+    })
 
 </script>
