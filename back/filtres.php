@@ -20,6 +20,9 @@ if(isset($_GET['genre'])) {
         case 'Femme':
             $req = $bdd->query('SELECT * FROM articles WHERE genre = "Femme"');
             break;
+        case 'All':
+            $req = $bdd->query('SELECT * FROM articles');
+            break;
     } 
 } else {
     //récupère les articles homme ET femme   
