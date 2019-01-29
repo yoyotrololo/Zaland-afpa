@@ -70,15 +70,31 @@ header{
     background-color: #343a40;
 }
 .font-weight-bold{
-    color:white;
-}
-
-.list-unstyled{
-    color:white;
+    color:#c82333;
 }
 
 .list-unstyled li a{
     color: white;
+}
+
+.fa-facebook-f:before {
+    color:#3B5998;
+    font-size: 30px;
+}
+
+.fa-twitter:before{
+    color:#55ACEE;
+    font-size: 30px;
+}
+
+.fa-google:before{
+    color: #dd4b39;
+    font-size: 30px;
+}
+
+.fa-linkedin:before{
+    color: #007bb5;
+    font-size: 30px;
 }
 
 .footer-copyright{
@@ -89,6 +105,5 @@ header{
     color: white;
 }
 .footer-copyright a:hover{
-    
     color:#c82333;
 }

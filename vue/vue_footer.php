@@ -149,23 +149,23 @@
     <!-- Social buttons -->
     <ul class="list-unstyled list-inline text-center">
         <li class="list-inline-item">
-            <a class="btn-floating btn-fb mx-1">
-                <i class="fa fa-facebook-f" style="font-size:35px;color:#3B5998;"> </i>
+            <a href="#!" class="btn-floating btn-fb mx-1">
+                <i class="fa fa-facebook-f"> </i>
             </a>
         </li>
         <li class="list-inline-item">
-            <a class="btn-floating btn-tw mx-1">
-                <i class="fa fa-twitter" style="font-size:35px;color:#55ACEE;"> </i>
+            <a href="#!" class="btn-floating btn-tw mx-1">
+                <i class="fa fa-twitter"> </i>
             </a>
         </li>
         <li class="list-inline-item">
-            <a class="btn-floating btn-gplus mx-1">
-                <i class="fa fa-google" style="font-size:35px;color:#dd4b39;"> </i>
+            <a href="#!" class="btn-floating btn-gplus mx-1">
+                <i class="fa fa-google"> </i>
             </a>
         </li>
         <li class="list-inline-item">
-            <a class="btn-floating btn-li mx-1">
-                <i class="fa fa-linkedin" style="font-size:35px;color:#007bb5;"> </i>
+            <a href="#!" class="btn-floating btn-li mx-1">
+                <i  class="fa fa-linkedin"> </i>
             </a>
         </li>
 
