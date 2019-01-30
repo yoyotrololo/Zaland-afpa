@@ -1,5 +1,5 @@
 <?php 
 
-define('DB_USER', 'madeline');
+define('DB_USER', 'Kevin');
 
-define('DB_PASSWORD', 'madeline');
+define('DB_PASSWORD', 'kevin');
