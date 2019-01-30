@@ -20,6 +20,7 @@
                 </form>
             </div>
             <div class="modal-footer">
+                <!-- TODO : fonction mot de passe oublié -->
                 <a href="#" id="inscription">S'inscrire</a> / <a>Mot de passe oublié</a>
 
             </div>
@@ -89,12 +90,12 @@
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <h5>Adresse :</h5>
+                            <h5>Nom Rue :</h5>
                             <div class="form-group input-group">
                                 <div class="input-group-addon">
                                     <i class="fa fa-map-marker"></i>
                                 </div>
-                                <input class="form-control has-error" name="nomRue" id="nomRue" placeholder="Adresse" type="text" />
+                                <input class="form-control has-error" name="nomRue" id="nomRue" placeholder="Nom Rue" type="text" />
                             </div>
                         </div>
                     </div>
@@ -105,7 +106,7 @@
                                 <div class="input-group-addon">
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>
-                                <input class="form-control has-error" name="CP" id="CP"  placeholder="Postal" type="text" />
+                                <input class="form-control has-error" name="CP" id="CP"  placeholder="Code Postal" type="text" />
                             </div>
                         </div>
                         <div class="col-sm-4">
@@ -169,7 +170,6 @@
         }
         document.getElementById("form_inscription").style.display = 'block';
     })
-
 
     $(document).ready(function() {
 
